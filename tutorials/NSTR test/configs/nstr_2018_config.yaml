@@ -1,0 +1,35 @@
+reader:
+  otn:
+    data_dir: '{repo_path}/data/NSTR test'
+    detections_csv: nstr_matched_detections_2018.csv
+    otn_metadata: hfx-stations.xlsx
+    vendor_tag_specs: nstr tags.xlsx
+    detection_extract: True
+    # sheet_skips: {}
+data:
+  sources:
+    load_wavedir: 'era5'
+    load_waveheight: 'era5'
+    load_waveperiod: 'era5'
+    load_wind_uv: 'era5'
+    load_wind_u: 'era5'
+    load_wind_v: 'era5'
+bounds:
+  description: Nova Scotia Torpedo Rays (NSTR)
+  start: 2018-02-21
+  end: 2018-12-21
+  lat_center: 49.7231
+  lon_center: -124.6858
+  n_offset: 0.5 #0.015
+  s_offset: 0.4 #0.015
+  e_offset: 0.5 #0.05
+  w_offset: 0.5 #0.03
+# file_map:
+#   data_dir: '{repo_path}/data/NSOG_Jan2018/SalishSeaCast'
+#   uVelocity: uVelocity_2018-01-01_2018-02-01.nc
+#   vVelocity: vVelocity_2018-01-01_2018-02-01.nc
+#   wVelocity: wVelocity_2018-01-01_2018-02-01.nc
+#   salinity: salinity_2018-01-01_2018-02-01.nc
+#   temperature: temperature_2018-01-01_2018-02-01.nc
+#   fraserTurbidity: fraserTurbidity_2018-01-01_2018-02-01.nc
+
